@@ -1,0 +1,133 @@
+.mainBox {
+    position: relative;
+    width: 369px;
+    height: 442px;
+    background-color: #202531;
+    overflow: hidden;
+
+    .imageContainer {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-image: url('/gamePics/tekken8.jpg');
+        background-size: cover;
+        background-position: center;
+
+        .gamePriceBox {
+            z-index: 100;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            background-color: #0c0f11;
+            bottom: 0;
+            right: 0;
+            transition: margin 0.2s ease-out 0.3s;
+
+            .discount {
+                font-weight: bold;
+                color: #000000;
+                background: #A1CD44;
+                padding: 6px;
+                font-size: 16px;
+            }
+
+            .originalPrice {
+                font-size: 14px;
+                color: #8F98A0;
+                padding: 4px;
+                text-decoration: line-through;
+            }
+
+            .discountPrice {
+                padding: 4px;
+                font-size: 14px;
+                color: #ffffff;
+            }
+        }
+    }
+
+    .infoContainer {
+        position: absolute;
+        bottom: 0;
+        height: 100%;
+        background: linear-gradient(315deg, #838d87 5%, #485759 95%);
+        transform: translateY(100%);
+        transition: transform 0.5s ease-in-out;
+
+        .gameGif {
+            background-size: cover;
+            background-position: center;
+            height: 50%;
+            background-image: url('/gamePics/tekken8trailer.gif');
+        }
+        .gameInfoAndBuyButton
+        {
+            padding: 20px;
+            position: relative;
+            .gameTitle {
+                font-size: 18px;
+                font-weight: bold;
+                color: #ffffff;
+            }
+            .gameReviews
+            {
+                font-size: 12px;
+                border-radius: 3px;
+                padding: 4px 5px;
+                background: #3a4545;
+                color: #ffffff;
+                max-width: 57%;
+                .summaryReviews
+                {
+                    color: #66C0F4;
+                }
+            }
+            .gameTags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5px;
+                margin: 10px 0 0 0;
+
+                .tag {
+                    padding: 2px 5px;
+                    background-color: #6c7a89;
+                    color: #ffffff;
+                    font-size: 12px;
+                    border-radius: 3px;
+                }
+            }
+
+            .buyButton {
+                position: absolute;
+                left: 20px;
+                top: 167px;
+                background-color: #5c7e10;
+                background: linear-gradient(to bottom, #a4d007 5%, #536904 95%);
+                color: #D2E885;
+                text-align: center;
+                padding: 10px;
+                border-radius: 5px;
+                cursor: pointer;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+            .buyButton:hover {
+                background-color: #6c9018;
+                background: -webkit-linear-gradient(top, #b6d908 5%, #80a006 95%);
+                color: #ffffff;
+            }
+        }
+    }
+
+    &:hover .infoContainer {
+        transform: translateY(0);
+    }
+
+    &:hover .gamePriceBox
+    {
+        margin: 20px 0;
+    }
+}

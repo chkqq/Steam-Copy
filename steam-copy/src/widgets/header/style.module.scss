@@ -60,7 +60,7 @@
             {
                 display: flex;
                 align-items: center;
-                padding: 3.5px 5px;
+                padding: 3.5px 7.5px;
                 color: inherit;
                 text-decoration: none;
                 background-color: #5c7e10;
@@ -100,10 +100,11 @@
                     position: absolute;
                     display: flex;
                     flex-direction: column;
-                    left: 60%;
+                    left: 58.7%;
                     background-color: #3D4450;
-                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    box-shadow: 0 0 12px #000000;
                     font-size: 12px;
+                    z-index: 1000;
                     .language, .problemReport
                     {
                         color: #dcdedf;

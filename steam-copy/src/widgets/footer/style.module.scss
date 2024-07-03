@@ -1,0 +1,75 @@
+.footer
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 32px 0 120px 0;
+    margin-bottom: 40px;
+    background-color: #000000;
+    color: #c6d4df;
+
+    .footerContent
+    {
+        width: 940px;
+
+        .links
+        {
+            color: #C6D4DF;
+            text-decoration: none;
+        }
+
+        .links:hover
+        {
+            color: #ffffff;
+        }
+
+        .delimiter
+        {
+            height: 8px;
+            border-top: 1px solid #363c44;
+        }
+
+        .logos
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 25px;
+
+            .newFooterLogo
+            {
+                display: block;
+                background-image: url('/footerLogo_valve_new.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 150px;
+                height: 25px;
+            }
+        }
+
+        .footerText
+        {
+            margin: 5px 12px 12px 12px;
+            color: #8F98A0;
+            font-size: 12px;
+            line-height: 16px;
+
+        }
+
+        .contactLinks
+        {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 8px;
+            font-size: 13px;
+        }
+
+        .socNetworkLinks
+        {
+            display: flex;
+            align-items: center;
+            gap: 3px;
+        }
+    }
+}

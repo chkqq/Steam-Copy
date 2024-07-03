@@ -1,7 +1,83 @@
-.main
+.background
 {
+
     width: 100%;
     min-height: 100vh;
     overflow: auto;
     font-family: 'Motiva Sans', sans-serif;
+    background-color: #202531;
+
+    .backgroundGif
+    {
+        position: absolute;
+        margin-top: 104px;
+        height: 700px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-image: url('/webm_page_bg_russian.gif');
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+
+    .pageContent
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        z-index: 1000;
+    }
+}
+
+.carouselContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 27.1vw;
+    gap: 20px;
+}
+
+.gamesContainer {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.navButton {
+    height: 100px;
+    background: rgba(15, 10, 10, 0.35);
+    color: #cccccc;
+    border: none;
+    font-size: 50px;
+    cursor: pointer;
+    padding: 0 5px;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.navButton:hover {
+    transform: scale(1.05);
+    color: #ffffff;
+}
+
+.pageIndicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.pageIndicator {
+  margin: 12px 2px;
+  width: 15px;
+  height: 9px;
+  border-radius: 2px;
+  transition: background-color 0.2s;
+  background-color: hsla(202,60%,100%,0.2);
+  cursor: pointer;
+}
+
+.pageIndicator.active {
+    background-color: hsla(202, 60%, 100%, 0.3);
 }
