@@ -1,0 +1,121 @@
+.header
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #171d25;
+    width: 100%;
+    height: 104px;
+
+    .logoAndNavLinksBox
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+
+        .logo
+        {
+            display: block;
+            background-image: url('/steam_logo.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 176px;
+            height: 44px;
+        }
+
+        .navigationLinksList {
+            display: flex;
+            gap: 15px;
+            a {
+                color: #dcdedf;
+                cursor: pointer;
+                text-transform: uppercase;
+                font-size: 16px;
+                font-weight: 500;
+                text-decoration: none;
+
+                &:hover {
+                    color: #ffffff;
+                }
+
+                &:active, &.active {
+                    color: #1a9fff;
+                    text-decoration: underline;
+                    text-decoration-thickness: 3px;
+                    text-underline-offset: 5px;
+                }
+            }
+        }
+
+        .downloadAndLoginAndLanguagesSelector
+        {
+            display: flex;
+            align-items: center;
+            margin-bottom: 70px;
+            gap: 7.5px;
+            color: #dcdedf;
+            font-size: 11px;
+            .download
+            {
+                display: flex;
+                align-items: center;
+                padding: 3.5px 5px;
+                color: inherit;
+                text-decoration: none;
+                background-color: #5c7e10;
+            }
+            .download:hover
+            {
+                background-color: #6c9018;
+                transition-duration: 250ms;
+                color: #ffffff;
+            }
+            .login
+            {
+                color: inherit;
+                text-decoration: none;
+            }
+            .login:hover
+            {
+                color:#ffffff;
+            }
+
+            .languagesSelector{
+
+                .languagesDropdownTrigger
+                {
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+
+                }
+                .languagesDropdownTrigger:hover
+                {
+                    color: #ffffff;
+                }
+
+                .languagesDropdown
+                {
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    left: 60%;
+                    background-color: #3D4450;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    font-size: 12px;
+                    .language, .problemReport
+                    {
+                        color: #dcdedf;
+                        padding: 5px 10px;
+                    }
+                    .language:hover, .problemReport:hover
+                    {
+                        color: #171d25;
+                        background: #dcdedf;
+                    }
+                }
+            }
+        }
+    }
+}
