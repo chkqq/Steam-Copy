@@ -35,9 +35,14 @@ const languageData = [
 
 const Header: React.FC = () => {
     const [isLanguagesOpen, setIsLanguagesOpen] = useState(false);
+    const [activeLink, setActiveLink] = useState<string>('shop');
 
     const toggleLanguagesDropdown = () => {
         setIsLanguagesOpen(!isLanguagesOpen);
+    };
+
+    const handleLinkClick = (link: string) => {
+        setActiveLink(link);
     };
 
     return (
@@ -45,10 +50,30 @@ const Header: React.FC = () => {
                 <div className={styles.logoAndNavLinksBox}>
                     <Link to='/' className={styles.logo} />
                     <div className={styles.navigationLinksList}>
-                        <Link to='/'>магазин</Link>
-                        <Link to='/'>сообщество</Link>
-                        <Link to='/'>информация</Link>
-                        <Link to='/'>поддержка</Link>
+                        <span
+                            className={activeLink === 'shop' ? styles.activeTab : ''}
+                            onClick={() => handleLinkClick('shop')}
+                        >
+                            магазин
+                        </span>
+                        <span
+                            className={activeLink === 'community' ? styles.activeTab : ''}
+                            onClick={() => handleLinkClick('community')}
+                        >
+                            сообщество
+                        </span>
+                        <span
+                            className={activeLink === 'info' ? styles.activeTab : ''}
+                            onClick={() => handleLinkClick('info')}
+                        >
+                            информация
+                        </span>
+                        <span
+                            className={activeLink === 'support' ? styles.activeTab : ''}
+                            onClick={() => handleLinkClick('support')}
+                        >
+                            поддержка
+                        </span>
                     </div>
                     <div className={styles.downloadAndLoginAndLanguagesSelector}>
                         <Link to='/' className={styles.download}>

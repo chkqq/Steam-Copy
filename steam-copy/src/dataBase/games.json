@@ -1,304 +1,212 @@
-{
-    "games": [
+[
       {
-        "id": 1,
-        "title": "TEKKEN 8",
-        "image": "/gamePics/tekken8.jpg",
-        "gif": "/gamePics/tekken8trailer.gif",
-        "discount": "-35%",
-        "originalPrice": "1599 руб.",
-        "discountPrice": "1039 руб.",
-        "reviews": {
-          "summary": "Очень положительно",
-          "count": 445544
-        },
-        "tags": [
-          "Файтинг",
-          "Экшен",
-          "3D-файтинг",
-          "Для нескольких игроков",
-          "Киберспорт"
-        ]
+          "id": "1",
+          "title": "TEKKEN 8",
+          "releaseDate": "8 июн. 2023 г.",
+          "description": " ",
+          "discount": 35,
+          "originalPrice": 1599,
+          "discountPrice": 1039,
+          "reviewsSummary": "Очень положительно",
+          "reviewsCount": 445544,
+          "tags": ["Файтинг", "Экшен", "3D-файтинг", "Для нескольких игроков", "Киберспорт"],
+          "imageUrl": "/gamePics/tekken8.jpg",
+          "gifUrl": "/gamePics/tekken8trailer.gif"
       },
       {
-        "id": 2,
+          "id": "2",
+          "title": "ELDEN RING",
+          "releaseDate": "25 фев. 2022 г.",
+          "description": " ",
+          "discount": 30,
+          "originalPrice": 3599,
+          "discountPrice": 2519,
+          "reviewsSummary": "Очень положительно",
+          "reviewsCount": 652473,
+          "tags": ["Похожа на Dark Souls", "Тёмное Фэнтези", "Открытый мир", "Ролевая игра", "Сложная"],
+          "imageUrl": "/gamePics/eldenring.jpg",
+          "gifUrl": "/gamePics/eldenringtrailer.gif"
+      },
+      {
+          "id": "3",
+          "title": "Baldur's Gate 3",
+          "releaseDate": "3 авг. 2023 г.",
+          "description": " ",
+          "discount": 20,
+          "originalPrice": 1999,
+          "discountPrice": 1599,
+          "reviewsSummary": "Очень положительно",
+          "reviewsCount": 554727,
+          "tags": ["Ролевая игра", "Решения с последствиями", "Кастомизация персонажа", "Глубокий сюжет", "Пошаговые решения"],
+          "imageUrl": "/gamePics/baldursgate3.jpg",
+          "gifUrl": "/gamePics/baldursgate3trailer.gif"
+      },
+      {
+          "id": "4",
+          "title": "Baldur's Gate 3",
+          "releaseDate": "3 авг. 2023 г.",
+          "description": " ",
+          "discount": 20,
+          "originalPrice": 1999,
+          "discountPrice": 1599,
+          "reviewsSummary": "Очень положительно",
+          "reviewsCount": 554727,
+          "tags": ["Ролевая игра", "Решения с последствиями", "Кастомизация персонажа", "Глубокий сюжет", "Пошаговые решения"],
+          "imageUrl": "/gamePics/baldursgate3.jpg",
+          "gifUrl": "/gamePics/baldursgate3trailer.gif"
+      },
+      {
+          "id": "5",
+          "title": "TEKKEN 8",
+          "releaseDate": "8 июн. 2023 г.",
+          "description": " ",
+          "discount": 35,
+          "originalPrice": 1599,
+          "discountPrice": 1039,
+          "reviewsSummary": "Очень положительно",
+          "reviewsCount": 445544,
+          "tags": ["Файтинг", "Экшен", "3D-файтинг", "Для нескольких игроков", "Киберспорт"],
+          "imageUrl": "/gamePics/tekken8.jpg",
+          "gifUrl": "/gamePics/tekken8trailer.gif"
+      },
+      {
+          "id": "6",
+          "title": "ELDEN RING",
+          "releaseDate": "25 фев. 2022 г.",
+          "description": " ",
+          "discount": 30,
+          "originalPrice": 3599,
+          "discountPrice": 2519,
+          "reviewsSummary": "Очень положительно",
+          "reviewsCount": 652473,
+          "tags": ["Похожа на Dark Souls", "Тёмное Фэнтези", "Открытый мир", "Ролевая игра", "Сложная"],
+          "imageUrl": "/gamePics/eldenring.jpg",
+          "gifUrl": "/gamePics/eldenringtrailer.gif"
+      },
+      {
+          "id": "7",
+          "title": "ELDEN RING",
+          "releaseDate": "25 фев. 2022 г.",
+          "description": " ",
+          "discount": 30,
+          "originalPrice": 3599,
+          "discountPrice": 2519,
+          "reviewsSummary": "Очень положительно",
+          "reviewsCount": 652473,
+          "tags": ["Похожа на Dark Souls", "Тёмное Фэнтези", "Открытый мир", "Ролевая игра", "Сложная"],
+          "imageUrl": "/gamePics/eldenring.jpg",
+          "gifUrl": "/gamePics/eldenringtrailer.gif"
+      },
+      {
+          "id": "8",
+          "title": "Baldur's Gate 3",
+          "releaseDate": "3 авг. 2023 г.",
+          "description": " ",
+          "discount": 20,
+          "originalPrice": 1999,
+          "discountPrice": 1599,
+          "reviewsSummary": "Очень положительно",
+          "reviewsCount": 554727,
+          "tags": ["Ролевая игра", "Решения с последствиями", "Кастомизация персонажа", "Глубокий сюжет", "Пошаговые решения"],
+          "imageUrl": "/gamePics/baldursgate3.jpg",
+          "gifUrl": "/gamePics/baldursgate3trailer.gif"
+      },
+      {
+        "id": "9",
         "title": "ELDEN RING",
-        "image": "/gamePics/eldenring.jpg",
-        "gif": "/gamePics/eldenringtrailer.gif",
-        "discount": "-30%",
-        "originalPrice": "3599 руб.",
-        "discountPrice": "2519 руб.",
-        "reviews": {
-          "summary": "Очень положительно",
-          "count": 652473
-        },
-        "tags": [
-          "Похожа на Dark Souls",
-          "Тёмное Фэнтези",
-          "Открытый мир",
-          "Ролевая игра",
-          "Сложная"
-        ]
-      },
-      {
-        "id": 3,
-        "title": "Baldur's Gate 3",
-        "image": "/gamePics/baldursgate3.jpg",
-        "gif": "/gamePics/baldursgate3trailer.gif",
-        "discount": "-20%",
-        "originalPrice": "1999 руб.",
-        "discountPrice": "1599 руб.",
-        "reviews": {
-          "summary": "Очень положительно",
-          "count": 554727
-        },
-        "tags": [
-          "Ролевая игра",
-          "Решения с последствиями",
-          "Кастомизация персонажа",
-          "Глубокий сюжет",
-          "Пошаговые решения"
-        ]
-      },
-      {
-        "id": 4,
-        "title": "Baldur's Gate 3",
-        "image": "/gamePics/baldursgate3.jpg",
-        "gif": "/gamePics/baldursgate3trailer.gif",
-        "discount": "-20%",
-        "originalPrice": "1999 руб.",
-        "discountPrice": "1599 руб.",
-        "reviews": {
-          "summary": "Очень положительно",
-          "count": 554727
-        },
-        "tags": [
-          "Ролевая игра",
-          "Решения с последствиями",
-          "Кастомизация персонажа",
-          "Глубокий сюжет",
-          "Пошаговые решения"
-        ]
-      },
-      {
-        "id": 5,
-        "title": "TEKKEN 8",
-        "image": "/gamePics/tekken8.jpg",
-        "gif": "/gamePics/tekken8trailer.gif",
-        "discount": "-35%",
-        "originalPrice": "1599 руб.",
-        "discountPrice": "1039 руб.",
-        "reviews": {
-          "summary": "Очень положительно",
-          "count": 445544
-        },
-        "tags": [
-          "Файтинг",
-          "Экшен",
-          "3D-файтинг",
-          "Для нескольких игроков",
-          "Киберспорт"
-        ]
-      },
-      {
-        "id": 6,
+        "releaseDate": "25 фев. 2022 г.",
+        "description": " ",
+        "discount": 30,
+        "originalPrice": 3599,
+        "discountPrice": 2519,
+        "reviewsSummary": "Очень положительно",
+        "reviewsCount": 652473,
+        "tags": ["Похожа на Dark Souls", "Тёмное Фэнтези", "Открытый мир", "Ролевая игра", "Сложная"],
+        "imageUrl": "/gamePics/eldenring.jpg",
+        "gifUrl": "/gamePics/eldenringtrailer.gif"
+    },
+    {
+        "id": "10",
         "title": "ELDEN RING",
-        "image": "/gamePics/eldenring.jpg",
-        "gif": "/gamePics/eldenringtrailer.gif",
-        "discount": "-30%",
-        "originalPrice": "3599 руб.",
-        "discountPrice": "2519 руб.",
-        "reviews": {
-          "summary": "Очень положительно",
-          "count": 652473
-        },
-        "tags": [
-          "Похожа на Dark Souls",
-          "Тёмное Фэнтези",
-          "Открытый мир",
-          "Ролевая игра",
-          "Сложная"
-        ]
-      },
-      {
-        "id": 7,
-        "title": "ELDEN RING",
-        "image": "/gamePics/eldenring.jpg",
-        "gif": "/gamePics/eldenringtrailer.gif",
-        "discount": "-30%",
-        "originalPrice": "3599 руб.",
-        "discountPrice": "2519 руб.",
-        "reviews": {
-          "summary": "Очень положительно",
-          "count": 652473
-        },
-        "tags": [
-          "Похожа на Dark Souls",
-          "Тёмное Фэнтези",
-          "Открытый мир",
-          "Ролевая игра",
-          "Сложная"
-        ]
-      },
-      {
-        "id": 8,
+        "releaseDate": "25 фев. 2022 г.",
+        "description": " ",
+        "discount": 30,
+        "originalPrice": 3599,
+        "discountPrice": 2519,
+        "reviewsSummary": "Очень положительно",
+        "reviewsCount": 652473,
+        "tags": ["Похожа на Dark Souls", "Тёмное Фэнтези", "Открытый мир", "Ролевая игра", "Сложная"],
+        "imageUrl": "/gamePics/eldenring.jpg",
+        "gifUrl": "/gamePics/eldenringtrailer.gif"
+    },
+    {
+        "id": "11",
         "title": "Baldur's Gate 3",
-        "image": "/gamePics/baldursgate3.jpg",
-        "gif": "/gamePics/baldursgate3trailer.gif",
-        "discount": "-20%",
-        "originalPrice": "1999 руб.",
-        "discountPrice": "1599 руб.",
-        "reviews": {
-          "summary": "Очень положительно",
-          "count": 554727
-        },
-        "tags": [
-          "Ролевая игра",
-          "Решения с последствиями",
-          "Кастомизация персонажа",
-          "Глубокий сюжет",
-          "Пошаговые решения"
-        ]
-      },
-      {
-        "id": 9,
-        "title": "Baldur's Gate 3",
-        "image": "/gamePics/baldursgate3.jpg",
-        "gif": "/gamePics/baldursgate3trailer.gif",
-        "discount": "-20%",
-        "originalPrice": "1999 руб.",
-        "discountPrice": "1599 руб.",
-        "reviews": {
-          "summary": "Очень положительно",
-          "count": 554727
-        },
-        "tags": [
-          "Ролевая игра",
-          "Решения с последствиями",
-          "Кастомизация персонажа",
-          "Глубокий сюжет",
-          "Пошаговые решения"
-        ]
-      },
-      {
-        "id": 10,
-        "title": "ELDEN RING",
-        "image": "/gamePics/eldenring.jpg",
-        "gif": "/gamePics/eldenringtrailer.gif",
-        "discount": "-30%",
-        "originalPrice": "3599 руб.",
-        "discountPrice": "2519 руб.",
-        "reviews": {
-          "summary": "Очень положительно",
-          "count": 652473
-        },
-        "tags": [
-          "Похожа на Dark Souls",
-          "Тёмное Фэнтези",
-          "Открытый мир",
-          "Ролевая игра",
-          "Сложная"
-        ]
-      },
-      {
-        "id": 11,
-        "title": "Baldur's Gate 3",
-        "image": "/gamePics/baldursgate3.jpg",
-        "gif": "/gamePics/baldursgate3trailer.gif",
-        "discount": "-20%",
-        "originalPrice": "1999 руб.",
-        "discountPrice": "1599 руб.",
-        "reviews": {
-          "summary": "Очень положительно",
-          "count": 554727
-        },
-        "tags": [
-          "Ролевая игра",
-          "Решения с последствиями",
-          "Кастомизация персонажа",
-          "Глубокий сюжет",
-          "Пошаговые решения"
-        ]
-      },
-      {
-        "id": 12,
-        "title": "Baldur's Gate 3",
-        "image": "/gamePics/baldursgate3.jpg",
-        "gif": "/gamePics/baldursgate3trailer.gif",
-        "discount": "-20%",
-        "originalPrice": "1999 руб.",
-        "discountPrice": "1599 руб.",
-        "reviews": {
-          "summary": "Очень положительно",
-          "count": 554727
-        },
-        "tags": [
-          "Ролевая игра",
-          "Решения с последствиями",
-          "Кастомизация персонажа",
-          "Глубокий сюжет",
-          "Пошаговые решения"
-        ]
-      },
-      {
-        "id": 13,
-        "title": "Baldur's Gate 3",
-        "image": "/gamePics/baldursgate3.jpg",
-        "gif": "/gamePics/baldursgate3trailer.gif",
-        "discount": "-20%",
-        "originalPrice": "1999 руб.",
-        "discountPrice": "1599 руб.",
-        "reviews": {
-          "summary": "Очень положительно",
-          "count": 554727
-        },
-        "tags": [
-          "Ролевая игра",
-          "Решения с последствиями",
-          "Кастомизация персонажа",
-          "Глубокий сюжет",
-          "Пошаговые решения"
-        ]
-      },
-      {
-        "id": 14,
-        "title": "TEKKEN 8",
-        "image": "/gamePics/tekken8.jpg",
-        "gif": "/gamePics/tekken8trailer.gif",
-        "discount": "-35%",
-        "originalPrice": "1599 руб.",
-        "discountPrice": "1039 руб.",
-        "reviews": {
-          "summary": "Очень положительно",
-          "count": 445544
-        },
-        "tags": [
-          "Файтинг",
-          "Экшен",
-          "3D-файтинг",
-          "Для нескольких игроков",
-          "Киберспорт"
-        ]
-      },
-      {
-        "id": 15,
-        "title": "ELDEN RING",
-        "image": "/gamePics/eldenring.jpg",
-        "gif": "/gamePics/eldenringtrailer.gif",
-        "discount": "-30%",
-        "originalPrice": "3599 руб.",
-        "discountPrice": "2519 руб.",
-        "reviews": {
-          "summary": "Очень положительно",
-          "count": 652473
-        },
-        "tags": [
-          "Похожа на Dark Souls",
-          "Тёмное Фэнтези",
-          "Открытый мир",
-          "Ролевая игра",
-          "Сложная"
-        ]
-      }
-    ]
+        "releaseDate": "3 авг. 2023 г.",
+        "description": " ",
+        "discount": 20,
+        "originalPrice": 1999,
+        "discountPrice": 1599,
+        "reviewsSummary": "Очень положительно",
+        "reviewsCount": 554727,
+        "tags": ["Ролевая игра", "Решения с последствиями", "Кастомизация персонажа", "Глубокий сюжет", "Пошаговые решения"],
+        "imageUrl": "/gamePics/baldursgate3.jpg",
+        "gifUrl": "/gamePics/baldursgate3trailer.gif"
+    },
+    {
+      "id": "12",
+      "title": "Baldur's Gate 3",
+      "releaseDate": "3 авг. 2023 г.",
+      "description": " ",
+      "discount": 20,
+      "originalPrice": 1999,
+      "discountPrice": 1599,
+      "reviewsSummary": "Очень положительно",
+      "reviewsCount": 554727,
+      "tags": ["Ролевая игра", "Решения с последствиями", "Кастомизация персонажа", "Глубокий сюжет", "Пошаговые решения"],
+      "imageUrl": "/gamePics/baldursgate3.jpg",
+      "gifUrl": "/gamePics/baldursgate3trailer.gif"
+  },
+  {
+      "id": "13",
+      "title": "Baldur's Gate 3",
+      "releaseDate": "3 авг. 2023 г.",
+      "description": " ",
+      "discount": 20,
+      "originalPrice": 1999,
+      "discountPrice": 1599,
+      "reviewsSummary": "Очень положительно",
+      "reviewsCount": 554727,
+      "tags": ["Ролевая игра", "Решения с последствиями", "Кастомизация персонажа", "Глубокий сюжет", "Пошаговые решения"],
+      "imageUrl": "/gamePics/baldursgate3.jpg",
+      "gifUrl": "/gamePics/baldursgate3trailer.gif"
+  },
+  {
+      "id": "14",
+      "title": "TEKKEN 8",
+      "releaseDate": "8 июн. 2023 г.",
+      "description": " ",
+      "discount": 35,
+      "originalPrice": 1599,
+      "discountPrice": 1039,
+      "reviewsSummary": "Очень положительно",
+      "reviewsCount": 445544,
+      "tags": ["Файтинг", "Экшен", "3D-файтинг", "Для нескольких игроков", "Киберспорт"],
+      "imageUrl": "/gamePics/tekken8.jpg",
+      "gifUrl": "/gamePics/tekken8trailer.gif"
+  },
+  {
+      "id": "15",
+      "title": "ELDEN RING",
+      "releaseDate": "25 фев. 2022 г.",
+      "description": " ",
+      "discount": 30,
+      "originalPrice": 3599,
+      "discountPrice": 2519,
+      "reviewsSummary": "Очень положительно",
+      "reviewsCount": 652473,
+      "tags": ["Похожа на Dark Souls", "Тёмное Фэнтези", "Открытый мир", "Ролевая игра", "Сложная"],
+      "imageUrl": "/gamePics/eldenring.jpg",
+      "gifUrl": "/gamePics/eldenringtrailer.gif"
   }
+]

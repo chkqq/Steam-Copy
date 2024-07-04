@@ -6,7 +6,7 @@
     overflow: auto;
     font-family: 'Motiva Sans', sans-serif;
     background-color: #202531;
-
+    background-image: url('/background.png');
     .backgroundGif
     {
         position: absolute;
@@ -29,55 +29,134 @@
         position: relative;
         z-index: 1000;
     }
-}
 
-.carouselContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 27.1vw;
-    gap: 20px;
-}
+    .bigSaleBackgroung
+    {
+        margin-top: 50px;
+        background: linear-gradient(161deg, #F5DCC2 8.84%, #F1C18B 86.04%);
+        padding: 30px 0 15px 0;
+        border-radius: 3px;
 
-.gamesContainer {
-    display: flex;
-    gap: 20px;
-    overflow: hidden;
-    width: 100%;
-}
+        .bigSaleInfoAndSeeMore
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 54px 50px 54px;
+            .bigSaleInfo
+            {
+                display: flex;
+                flex-direction: column;
+                .title
+                {
+                    color: #E3535B;
+                    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.2);
+                    font-size: 38px;
+                }
+                .description
+                {
+                    font-size: 14px;
+                    color: #000000;
+                }
+            }
+        }
+    }
 
-.navButton {
-    height: 100px;
-    background: rgba(15, 10, 10, 0.35);
-    color: #cccccc;
-    border: none;
-    font-size: 50px;
-    cursor: pointer;
-    padding: 0 5px;
-    transition: transform 0.2s ease, color 0.2s ease;
-}
+    .gameCategories
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
 
-.navButton:hover {
-    transform: scale(1.05);
-    color: #ffffff;
-}
+        .title
+        {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-size: 24px;
+            font-weight: 600;
+            color: #ffffff;
+            .subText
+            {
+                font-size: 18px;
+                background: #4ecc8f;
+                color: #000;
+                padding: 10px 15px;
+                border-radius: 3px;
+            }
+        }
+    }
 
-.pageIndicators {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-}
+    .favoriteMark
+    {
+        display: flex;
+        margin-top: 20px;
+        gap: 15px;
+    }
+    .tablesTitleBox
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .tablesTitle
+    {
+        font-size: 26px;
+    }
+    .tablesDescription
+    {
+        font-size: 14px;
+    }
 
-.pageIndicator {
-  margin: 12px 2px;
-  width: 15px;
-  height: 9px;
-  border-radius: 2px;
-  transition: background-color 0.2s;
-  background-color: hsla(202,60%,100%,0.2);
-  cursor: pointer;
-}
+    .tablesTitle, .tablesDescription
+    {
+        margin: 0 15px;
+        text-transform: uppercase;
+        font-weight: 600;
+        text-shadow: 2px 2px 4px #5a2222;
+        color: #ffffff;
+    }
+    .moreGamesLinks
+    {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 5px;
+        font-size: 14px;
+        color: #ffffff;
+    }
+    .seeMore
+    {
+        cursor: pointer;
+        border-radius: 2px;
+        padding: 2.5px 10px;
+        background: rgba(255, 255, 255, 0.8);
+        color: #000000;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .seeMore:hover
+    {
+        background-color: #ffffff;
+    }
 
-.pageIndicator.active {
-    background-color: hsla(202, 60%, 100%, 0.3);
+    .popularAndNewUpComing
+    {
+        margin-bottom: 100px;
+        .tabs
+        {
+            display: flex;
+            gap: 20px;
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #ffffff;
+            cursor: pointer;
+        }
+        .activeTab
+        {
+            text-decoration: underline;
+            text-decoration-thickness: 3px;
+            text-underline-offset: 5px;
+        }
+    }
 }

@@ -1,20 +1,6 @@
 import React from 'react';
 import styles from './style.module.scss';
-
-export interface Game {
-    id: number;
-    title: string;
-    image: string;
-    gif: string;
-    discount: string;
-    originalPrice: string;
-    discountPrice: string;
-    reviews: {
-        summary: string;
-        count: number;
-    };
-    tags: string[];
-}
+import { Game } from '../../types/gameTypes';
 
 interface GameCardLargeProps {
     game: Game;
@@ -23,10 +9,10 @@ interface GameCardLargeProps {
 const GameCardLarge: React.FC<GameCardLargeProps> = ({ game }) => {
     return (
         <div className={styles.mainBox}>
-            <div className={styles.imageContainer} style={{ backgroundImage: `url(${game.image})` }}>
+            <div className={styles.imageContainer} style={{ backgroundImage: `url(${game.imageUrl})` }}>
                 <div className={styles.gamePriceBox}>
                     <div className={styles.discount}>
-                        <span>{game.discount}</span>
+                        <span>{game.discount}%</span>
                     </div>
                     <div className={styles.originalPrice}>
                         <span>{game.originalPrice}</span>
@@ -37,12 +23,12 @@ const GameCardLarge: React.FC<GameCardLargeProps> = ({ game }) => {
                 </div>
             </div>
             <div className={styles.infoContainer}>
-                <div className={styles.gameGif} style={{ backgroundImage: `url(${game.gif})` }} />
+                <div className={styles.gameGif} style={{ backgroundImage: `url(${game.gifUrl})` }} />
                 <div className={styles.gameInfoAndBuyButton}>
                     <div className={styles.gameTitle}>{game.title}</div>
                     <div className={styles.gameReviews}>
-                        <span className={styles.summaryReviews}>{game.reviews.summary} </span>
-                        <span>({game.reviews.count})</span>
+                        <span className={styles.summaryReviews}>{game.reviewsSummary} </span>
+                        <span>({game.reviewsCount})</span>
                     </div>
                     <div className={styles.gameTags}>
                         {game.tags.map((tag, index) => (
