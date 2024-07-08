@@ -1,33 +1,33 @@
-import React, { useState } from 'react';
-import styles from './style.module.scss';
-import { Category } from '../../types/gameTypes';
-import CategoryCard from '../categoryCard';
+import React, { useState } from 'react'
+import styles from './style.module.scss'
+import { Category } from '../../../types/gameTypes'
+import CategoryCard from '../../cards/categoryCard'
 
 interface CategoryCarouselContainerProps {
-    categories: Category[];
+    categories: Category[]
 }
 const CategoryCarouselContainer: React.FC<CategoryCarouselContainerProps> = ({ categories }) => {
-    const [currentPage, setCurrentPage] = useState(0);
-    const categoriesPerPage = 4;
+    const [currentPage, setCurrentPage] = useState(0)
+    const categoriesPerPage = 4
 
-    const totalPages = Math.ceil(categories.length / categoriesPerPage);
+    const totalPages = Math.ceil(categories.length / categoriesPerPage)
 
     const handlePrevPage = () => {
-        setCurrentPage(prevPage => (prevPage === 0 ? totalPages - 1 : prevPage - 1));
-    };
+        setCurrentPage(prevPage => (prevPage === 0 ? totalPages - 1 : prevPage - 1))
+    }
 
     const handleNextPage = () => {
-        setCurrentPage(prevPage => (prevPage === totalPages - 1 ? 0 : prevPage + 1));
-    };
+        setCurrentPage(prevPage => (prevPage === totalPages - 1 ? 0 : prevPage + 1))
+    }
 
     const handlePageIndicatorClick = (pageIndex: number) => {
-        setCurrentPage(pageIndex);
-    };
+        setCurrentPage(pageIndex)
+    }
 
     const getCurrentCategories = () => {
-        const startIndex = currentPage * categoriesPerPage;
-        return categories.slice(startIndex, startIndex + categoriesPerPage);
-    };
+        const startIndex = currentPage * categoriesPerPage
+        return categories.slice(startIndex, startIndex + categoriesPerPage)
+    }
 
     return (
         <div>
@@ -50,7 +50,7 @@ const CategoryCarouselContainer: React.FC<CategoryCarouselContainerProps> = ({ c
                 ))}
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default CategoryCarouselContainer;
+export default CategoryCarouselContainer

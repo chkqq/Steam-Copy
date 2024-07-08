@@ -1,12 +1,12 @@
-import React from 'react';
-import styles from './style.module.scss';
-import { Game } from '../../types/gameTypes';
+import React from 'react'
+import styles from './style.module.scss'
+import { Game } from '../../../types/gameTypes'
 
-interface GameCardLargeProps {
-    game: Game;
+interface GameCardVerticalProps {
+    game: Game
 }
 
-const GameCardLarge: React.FC<GameCardLargeProps> = ({ game }) => {
+const GameCardVertical: React.FC<GameCardVerticalProps> = ({ game }) => {
     return (
         <div className={styles.mainBox}>
             <div className={styles.imageContainer} style={{ backgroundImage: `url(${game.imageUrl})` }}>
@@ -43,7 +43,7 @@ const GameCardLarge: React.FC<GameCardLargeProps> = ({ game }) => {
                 </div>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default GameCardLarge;
+export default GameCardVertical

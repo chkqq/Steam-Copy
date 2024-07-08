@@ -1,6 +1,6 @@
-import React from 'react';
-import styles from './style.module.scss';
-import { Category } from '../../types/gameTypes';
+import React from 'react'
+import styles from './style.module.scss'
+import { Category } from '../../../types/gameTypes'
 
 interface CategoryCardProps{
     category: Category
@@ -18,7 +18,7 @@ const CategoryCard: React.FC<CategoryCardProps> = ({category}) => {
             <div className={styles.gradient} />
             <span className={styles.title}>{category.title}</span>
         </div>
-    );
-};
+    )
+}
 
-export default CategoryCard;
+export default CategoryCard

@@ -1,45 +1,16 @@
-import { Link } from 'react-router-dom';
-import styles from './style.module.scss';
-import { categories } from '../../const/categoriesFilter';
-import { useState } from 'react';
-
+import { Link } from 'react-router-dom'
+import styles from './style.module.scss'
+import { categories } from '../../const/categoriesFilter'
+import { newAndInteresting } from '../../const/newAndInteresting'
+import Dropdown from '../../ui/dropDown'
 const StoreNavigation = () => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
-  const handleTabHover = () => {
-    setIsDropdownOpen(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsDropdownOpen(false);
-  };
-
-  const handleDropdownMouseEnter = () => {
-    setIsDropdownOpen(true);
-  };
-
-  const handleDropdownMouseLeave = () => {
-    setIsDropdownOpen(false);
-  };
-
   return (
-    <div className={styles.navBar} onMouseLeave={handleMouseLeave}>
-      <div className={`${styles.dropdown} ${isDropdownOpen && styles.dropdownOpen}`} onMouseEnter={handleDropdownMouseEnter} onMouseLeave={handleDropdownMouseLeave}>
-        {categories.map((category, index) => (
-          <div key={index} className={styles.dropdownColumn}>
-            <div className={styles.dropdownHeader}>{category.header}</div>
-            {category.items.map((item, id) => (
-              <div key={id} className={styles.dropdownItem}>{item}</div>
-            ))}
-          </div>
-        ))}
-      </div>
-
+    <div className={styles.navBar}>
       <div className={styles.tab}>
         Магазин
       </div>
-      <div className={styles.tab}>Новое и интересное</div>
-      <div className={styles.tab} onMouseEnter={() => handleTabHover()}>Категории</div>
+      <Dropdown categories={newAndInteresting} dropDownName='Новое и интересное'/>
+      <Dropdown categories={categories} dropDownName='Категории'/>
       <Link to='/' className={styles.tab}>Предметы за очки</Link>
       <Link to='/' className={styles.tab}>Новости</Link>
       <Link to='/' className={styles.tab}>Лаборатории</Link>
@@ -48,7 +19,7 @@ const StoreNavigation = () => {
         <button className={styles.searchButton} />
       </div>
     </div>
-  );
+  )
 }
 
-export default StoreNavigation;
+export default StoreNavigation

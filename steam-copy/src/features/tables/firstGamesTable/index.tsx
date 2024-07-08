@@ -1,36 +1,36 @@
-import styles from './style.module.scss';
-import GameCardRectangular from '../gameCardRectangular';
-import { Game } from '../../types/gameTypes';
+import styles from './style.module.scss'
+import GameCardHorizontal from '../../cards/gameCardHorizontal'
+import { Game } from '../../../types/gameTypes'
 
-interface GamesTableProps {
-    games: Game[];
+interface FirstGamesTableProps {
+    games: Game[]
 }
 
-const GamesTable: React.FC<GamesTableProps> = ({ games }) => {
+const FirstGamesTable: React.FC<FirstGamesTableProps> = ({ games }) => {
     return (
         <div className={styles.gamesTable}>
             <div className={styles.gamesRoleSmall}>
                 {games.slice(0, 4).map((game, index) => (
-                    <GameCardRectangular key={index} game={game} size='Medium' />
+                    <GameCardHorizontal key={index} game={game} size='Medium' />
                 ))}
             </div>
             <div className={styles.gamesRoleLarge}>
                 {games.slice(4, 7).map((game, index) => (
-                    <GameCardRectangular key={index} game={game} size='Large' />
+                    <GameCardHorizontal key={index} game={game} size='Large' />
                 ))}
             </div>
             <div className={styles.gamesRoleSmall}>
                 {games.slice(7, 11).map((game, index) => (
-                    <GameCardRectangular key={index} game={game} size='Medium' />
+                    <GameCardHorizontal key={index} game={game} size='Medium' />
                 ))}
             </div>
             <div className={styles.gamesRoleLarge}>
                 {games.slice(11, 14).map((game, index) => (
-                    <GameCardRectangular key={index} game={game} size='Large' />
+                    <GameCardHorizontal key={index} game={game} size='Large' />
                 ))}
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default GamesTable;
+export default FirstGamesTable

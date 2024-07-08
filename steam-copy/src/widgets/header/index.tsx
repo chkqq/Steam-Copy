@@ -1,48 +1,19 @@
-import React, { useState } from 'react';
-import styles from './style.module.scss';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react'
+import styles from './style.module.scss'
+import { Link } from 'react-router-dom'
+import { languageData } from '../../const/languages'
 
-const languageData = [
-    "简体中文 (упрощенный китайский)",
-    "繁體中文 (традиционный китайский)",
-    "日本語 (японский)",
-    "한국어 (корейский)",
-    "ภาษาไทย (тайский)",
-    "Български (болгарский)",
-    "Čeština (чешский)",
-    "Dansk (датский)",
-    "Deutsch (немецкий)",
-    "English (английский)",
-    "Español - España (испанский)",
-    "Español - Latinoamérica (латиноам. испанский)",
-    "Ελληνικά (греческий)",
-    "Français (французский)",
-    "Italiano (итальянский)",
-    "Bahasa Indonesia (индонезийский)",
-    "Magyar (венгерский)",
-    "Nederlands (нидерландский)",
-    "Norsk (норвежский)",
-    "Polski (польский)",
-    "Português (португальский)",
-    "Português-Brasil (бразильский португальский)",
-    "Română (румынский)",
-    "Suomi (финский)",
-    "Svenska (шведский)",
-    "Türkçe (турецкий)",
-    "Tiếng Việt (вьетнамский)",
-    "Українська (украинский)"
-];
 
 const Header: React.FC = () => {
-    const [isLanguagesOpen, setIsLanguagesOpen] = useState(false);
-    const [activeLink, setActiveLink] = useState<string>('shop');
+    const [isLanguagesOpen, setIsLanguagesOpen] = useState(false)
+    const [activeLink, setActiveLink] = useState<string>('shop')
 
     const toggleLanguagesDropdown = () => {
-        setIsLanguagesOpen(!isLanguagesOpen);
+        setIsLanguagesOpen(!isLanguagesOpen)
     };
 
     const handleLinkClick = (link: string) => {
-        setActiveLink(link);
+        setActiveLink(link)
     };
 
     return (
@@ -107,8 +78,8 @@ const Header: React.FC = () => {
                     </div>
                 </div>
             </div>
-    );
+    )
 }
 
-export default Header;
+export default Header
 

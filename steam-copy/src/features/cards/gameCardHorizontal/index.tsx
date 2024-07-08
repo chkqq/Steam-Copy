@@ -1,16 +1,15 @@
-// src/features/gameCardRectangular/index.tsx
-import React from 'react';
-import styles from './style.module.scss';
-import { Game } from '../../types/gameTypes';
-import { useState
- } from 'react';
-interface GameCardRectangularProps {
-    game: Game;
-    size: 'Large' | 'Medium' | 'Small';
+import React from 'react'
+import styles from './style.module.scss'
+import { Game } from '../../../types/gameTypes'
+import { useState } from 'react'
+
+interface GameCardHorizontalProps {
+    game: Game
+    size: 'Large' | 'Medium' | 'Small'
 }
 
-const GameCardRectangular: React.FC<GameCardRectangularProps> = ({ game, size }) => {
-    const [isHovered, setIsHovered] = useState(false);
+const GameCardHorizontal: React.FC<GameCardHorizontalProps> = ({ game, size }) => {
+    const [isHovered, setIsHovered] = useState(false)
 
     const handleMouseEnter = () => {
     setIsHovered(true);
@@ -61,7 +60,7 @@ const GameCardRectangular: React.FC<GameCardRectangularProps> = ({ game, size })
                 </div>
             </div>
         </div>
-    );
+    )
 }
 
-export default GameCardRectangular;
+export default GameCardHorizontal
