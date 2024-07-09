@@ -1,0 +1,19 @@
+.linkBox{
+    text-decoration: none;
+    .seeMore
+    {
+        cursor: pointer;
+        border-radius: 2px;
+        padding: 2.5px 10px;
+        background: rgba(255, 255, 255, 0.8);
+        color: #000000;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+}
+.seeMore:hover
+{
+    background-color: #ffffff;
+}

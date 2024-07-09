@@ -1,0 +1,25 @@
+.gameCategories
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    .title
+    {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 24px;
+        font-weight: 600;
+        color: #ffffff;
+        .subText
+        {
+            font-size: 18px;
+            background: #4ecc8f;
+            color: #000;
+            padding: 10px 15px;
+            border-radius: 3px;
+        }
+    }
+}

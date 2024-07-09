@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './style.module.scss'
 import { Game } from '../../../types/gameTypes'
 import { useState } from 'react'
+import GamePrice from '../../../ui/gamePrice'
 
 interface GameCardHorizontalProps {
     game: Game
@@ -28,17 +29,12 @@ const GameCardHorizontal: React.FC<GameCardHorizontalProps> = ({ game, size }) =
                 className={styles.cardImage}
                 style={{ backgroundImage: `url(${isHovered ? game.gifUrl : game.imageUrl})` }}
             />
-            <div className={styles.gamePriceBox}>
-                <div className={styles.discount}>
-                    <span>{`-${game.discount}%`}</span>
-                </div>
-                <div className={styles.originalPrice}>
-                    <span>{game.originalPrice}</span>
-                </div>
-                <div className={styles.discountPrice}>
-                    <span>{game.discountPrice}</span>
-                </div>
-            </div>
+            <GamePrice
+                location='left'
+                discount={game.discount}
+                originalPrice={game.originalPrice}
+                discountPrice={game.discountPrice}
+            />
             <div className={styles.tooltip}>
                 <div className={styles.gameTitle}>{game.title}</div>
                 <div className={styles.releaseDate}>Дата выпуска: {game.releaseDate}</div>

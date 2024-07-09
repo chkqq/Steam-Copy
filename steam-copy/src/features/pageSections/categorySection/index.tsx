@@ -1,4 +1,4 @@
-import styles from '../style.module.scss'
+import styles from './style.module.scss'
 import CategoryCarouselContainer from '../../../features/carouselContainers/categoryCarouselContainer'
 import { Category } from '../../../types/gameTypes'
 const CategorySection: React.FC<{ categories: Category[] }> = ({ categories }) => (

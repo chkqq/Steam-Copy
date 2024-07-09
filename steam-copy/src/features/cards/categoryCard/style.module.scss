@@ -1,33 +1,80 @@
 .mainBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
-    height: 280px;
-    width: 288px;
-    background-size: contain;
-    background-repeat: no-repeat;
     position: relative;
-    transition: transform 0.3s;
+    width: 288px;
+    height: 280px;
+    perspective: 1000px;
+    transition: transform 0.6s;
+    cursor: pointer;
 
-    .gradient {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        background: linear-gradient(rgba(0, 0, 0, 0), var(--gradient-color) 100%);
+    &:hover {
+        transform: rotateY(180deg);
     }
 
-    .title {
-        padding-bottom: 30px;
-        z-index: 100;
-        font-size: 16px;
-        font-weight: bold;
-        color: white;
-        text-shadow: 0 1px 3px rgb(0 0 0 / 50%);
-        text-transform: uppercase;
+    .cardInner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+    }
+
+    .cardFront,
+    .cardBack {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+    }
+
+    .cardFront {
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        transition: transform 0.6s;
+        transform: rotateY(0deg);
+        transform-style: preserve-3d;
+
+        .title {
+            padding-bottom: 30px;
+            z-index: 100;
+            font-size: 16px;
+            font-weight: bold;
+            color: #ffffff;
+            text-shadow: 0 1px 3px rgb(0 0 0 / 50%);
+            text-transform: uppercase;
+        }
+    }
+
+    .cardBack {
+        transform: rotateY(180deg);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        .cardDescription {
+            transform: scaleX(-1);
+            padding: 20px;
+            text-align: left;
+            color: #ffffff;
+            text-shadow:
+                -1px -1px 0 #333,
+                1px -1px 0 #333,
+                -1px 1px 0 #333,
+                1px 1px 0 #333;
+        }
+    }
+
+    &.flipped .cardInner {
+        transform: rotateY(180deg);
     }
 }
 
-.mainBox:hover {
-    transform: scale(1.05);
+.gradient {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0), var(--gradient-color) 100%);
 }

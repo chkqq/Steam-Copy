@@ -1,0 +1,19 @@
+.pageIndicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+
+    .pageIndicator {
+      margin: 12px 2px;
+      width: 15px;
+      height: 9px;
+      border-radius: 2px;
+      transition: background-color 0.2s;
+      background-color: hsla(202,60%,100%,0.2);
+      cursor: pointer;
+    }
+
+    .pageIndicator.active {
+        background-color: hsla(202, 60%, 100%, 0.3);
+    }
+}

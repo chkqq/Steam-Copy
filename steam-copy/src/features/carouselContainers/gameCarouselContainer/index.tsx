@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from './style.module.scss'
 import { Game } from '../../../types/gameTypes'
-import { useState } from 'react'
+import PageIndicators from '../../../ui/pageIndicators'
+import CarouselButton from '../../../ui/CarouselButton'
 
 interface GameCarouselContainerProps {
     games: Game[]
@@ -10,47 +11,59 @@ interface GameCarouselContainerProps {
 
 const GameCarouselContainer: React.FC<GameCarouselContainerProps> = ({ games, CardComponent }) => {
     const [currentPage, setCurrentPage] = useState(0)
+    const [isLoading, setIsLoading] = useState(false)
     const gamesPerPage = 3
-
     const totalPages = Math.ceil(games.length / gamesPerPage)
+    const [currentGames, setCurrentGames] = useState<Game[]>([])
+
+    useEffect(() => {
+        const startIndex = currentPage * gamesPerPage
+        const newGames = games.slice(startIndex, startIndex + gamesPerPage)
+        setCurrentGames(newGames)
+    }, [currentPage, games])
 
     const handlePrevPage = () => {
-        setCurrentPage(prevPage => (prevPage === 0 ? totalPages - 1 : prevPage - 1))
+        setIsLoading(true)
+        setTimeout(() => {
+            setCurrentPage(prevPage => (prevPage === 0 ? totalPages - 1 : prevPage - 1))
+            setIsLoading(false)
+        }, 100)
     }
 
     const handleNextPage = () => {
-        setCurrentPage(prevPage => (prevPage === totalPages - 1 ? 0 : prevPage + 1))
+        setIsLoading(true)
+        setTimeout(() => {
+            setCurrentPage(prevPage => (prevPage === totalPages - 1 ? 0 : prevPage + 1))
+            setIsLoading(false)
+        }, 100)
     }
 
     const handlePageIndicatorClick = (pageIndex: number) => {
-        setCurrentPage(pageIndex)
-    }
-
-    const getCurrentGames = () => {
-        const startIndex = currentPage * gamesPerPage
-        return games.slice(startIndex, startIndex + gamesPerPage)
+        setIsLoading(true)
+        setTimeout(() => {
+            setCurrentPage(pageIndex)
+            setIsLoading(false)
+        }, 100)
     }
 
     return (
         <>
             <div className={styles.carouselContainer}>
-                <button onClick={handlePrevPage} className={styles.navButton}>❮</button>
+                <CarouselButton direction="prev" onClick={handlePrevPage} />
                 <div className={styles.gamesContainer}>
-                    {getCurrentGames().map(game => (
-                        <CardComponent key={game.id} game={game} />
+                    {currentGames.map(game => (
+                        <div key={game.id} className={`${styles.gameCard} ${isLoading ? styles.hidden : ''}`}>
+                            <CardComponent game={game} key={game.id} />
+                        </div>
                     ))}
                 </div>
-                <button onClick={handleNextPage} className={styles.navButton}>❯</button>
+                <CarouselButton direction="next" onClick={handleNextPage} />
             </div>
-            <div className={styles.pageIndicators}>
-                {Array.from({ length: totalPages }, (_, index) => (
-                    <span
-                        key={index}
-                        className={`${styles.pageIndicator} ${index === currentPage ? styles.active : ''}`}
-                        onClick={() => handlePageIndicatorClick(index)}
-                    />
-                ))}
-            </div>
+            <PageIndicators
+                totalPages={totalPages}
+                currentPage={currentPage}
+                onPageIndicatorClick={handlePageIndicatorClick}
+            />
         </>
     )
 }

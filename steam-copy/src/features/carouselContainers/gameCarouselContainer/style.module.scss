@@ -10,6 +10,17 @@
         gap: 20px;
         width: 100%;
         z-index: 1;
+
+        .gameCard {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.1s ease, transform 0.1s ease;
+        }
+
+        .gameCard.hidden {
+            opacity: 0;
+            transform: translateY(20px);
+        }
     }
 
     .navButton {
@@ -29,19 +40,18 @@
     }
 }
 
-
 .pageIndicators {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
     .pageIndicator {
-      margin: 12px 2px;
-      width: 15px;
-      height: 9px;
-      border-radius: 2px;
-      transition: background-color 0.2s;
-      background-color: hsla(202,60%,100%,0.2);
-      cursor: pointer;
+        margin: 12px 2px;
+        width: 15px;
+        height: 9px;
+        border-radius: 2px;
+        transition: background-color 0.2s;
+        background-color: hsla(202,60%,100%,0.2);
+        cursor: pointer;
     }
 
     .pageIndicator.active {

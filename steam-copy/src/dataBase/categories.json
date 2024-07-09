@@ -3,120 +3,140 @@
         "id": "1",
         "title": "Симулятор" ,
         "imgUrl": "/gamePics/simulationCategory.jpg",
-        "gradientColor": "rgb(0, 139, 139)"
+        "gradientColor": "rgb(0, 139, 139)",
+        "description": "Категория, где игроки могут симулировать различные аспекты реальной или вымышленной жизни."
     },
     {
         "id": "2",
         "title": "Файтинг" ,
         "imgUrl": "/gamePics/fightingCategory.jpg",
-        "gradientColor": "rgb(139, 0, 139)"
+        "gradientColor": "rgb(139, 0, 139)",
+        "description": "Категория, в которой игроки участвуют в поединках один на один или в командных боях."
     },
     {
         "id": "3",
         "title": "Симулятор" ,
         "imgUrl": "/gamePics/simulationCategory.jpg",
-        "gradientColor": "rgb(0, 139, 139)"
+        "gradientColor": "rgb(0, 139, 139)",
+        "description": "Категория, где игроки могут симулировать различные аспекты реальной или вымышленной жизни."
     },
     {
         "id": "4",
         "title": "Файтинг" ,
         "imgUrl": "/gamePics/fightingCategory.jpg",
-        "gradientColor": "rgb(139, 0, 139)"
+        "gradientColor": "rgb(139, 0, 139)",
+        "description": "Категория, в которой игроки участвуют в поединках один на один или в командных боях."
     },
     {
         "id": "5",
         "title": "Симулятор" ,
         "imgUrl": "/gamePics/simulationCategory.jpg",
-        "gradientColor": "rgb(0, 139, 139)"
+        "gradientColor": "rgb(0, 139, 139)",
+        "description": "Категория, где игроки могут симулировать различные аспекты реальной или вымышленной жизни."
     },
     {
         "id": "6",
         "title": "Файтинг" ,
         "imgUrl": "/gamePics/fightingCategory.jpg",
-        "gradientColor": "rgb(139, 0, 139)"
+        "gradientColor": "rgb(139, 0, 139)",
+        "description": "Категория, в которой игроки участвуют в поединках один на один или в командных боях."
     },
     {
         "id": "7",
         "title": "Симулятор" ,
         "imgUrl": "/gamePics/simulationCategory.jpg",
-        "gradientColor": "rgb(0, 139, 139)"
+        "gradientColor": "rgb(0, 139, 139)",
+        "description": "Категория, где игроки могут симулировать различные аспекты реальной или вымышленной жизни."
     },
     {
         "id": "8",
         "title": "Файтинг" ,
         "imgUrl": "/gamePics/fightingCategory.jpg",
-        "gradientColor": "rgb(139, 0, 139)"
+        "gradientColor": "rgb(139, 0, 139)",
+        "description": "Категория, в которой игроки участвуют в поединках один на один или в командных боях."
     },
     {
         "id": "9",
         "title": "Симулятор" ,
         "imgUrl": "/gamePics/simulationCategory.jpg",
-        "gradientColor": "rgb(0, 139, 139)"
+        "gradientColor": "rgb(0, 139, 139)",
+        "description": "Категория, где игроки могут симулировать различные аспекты реальной или вымышленной жизни."
     },
     {
         "id": "10",
         "title": "Файтинг" ,
         "imgUrl": "/gamePics/fightingCategory.jpg",
-        "gradientColor": "rgb(139, 0, 139)"
+        "gradientColor": "rgb(139, 0, 139)",
+        "description": "Категория, в которой игроки участвуют в поединках один на один или в командных боях."
     },
     {
         "id": "11",
         "title": "Симулятор" ,
         "imgUrl": "/gamePics/simulationCategory.jpg",
-        "gradientColor": "rgb(0, 139, 139)"
+        "gradientColor": "rgb(0, 139, 139)",
+        "description": "Категория, где игроки могут симулировать различные аспекты реальной или вымышленной жизни."
     },
     {
         "id": "12",
         "title": "Файтинг" ,
         "imgUrl": "/gamePics/fightingCategory.jpg",
-        "gradientColor": "rgb(139, 0, 139)"
+        "gradientColor": "rgb(139, 0, 139)",
+        "description": "Категория, в которой игроки участвуют в поединках один на один или в командных боях."
     },
     {
         "id": "13",
         "title": "Симулятор" ,
         "imgUrl": "/gamePics/simulationCategory.jpg",
-        "gradientColor": "rgb(0, 139, 139)"
+        "gradientColor": "rgb(0, 139, 139)",
+        "description": "Категория, где игроки могут симулировать различные аспекты реальной или вымышленной жизни."
     },
     {
         "id": "14",
         "title": "Файтинг" ,
         "imgUrl": "/gamePics/fightingCategory.jpg",
-        "gradientColor": "rgb(139, 0, 139)"
+        "gradientColor": "rgb(139, 0, 139)",
+        "description": "Категория, в которой игроки участвуют в поединках один на один или в командных боях."
     },
     {
         "id": "15",
         "title": "Симулятор" ,
         "imgUrl": "/gamePics/simulationCategory.jpg",
-        "gradientColor": "rgb(0, 139, 139)"
+        "gradientColor": "rgb(0, 139, 139)",
+        "description": "Категория, где игроки могут симулировать различные аспекты реальной или вымышленной жизни."
     },
     {
         "id": "16",
         "title": "Файтинг" ,
         "imgUrl": "/gamePics/fightingCategory.jpg",
-        "gradientColor": "rgb(139, 0, 139)"
+        "gradientColor": "rgb(139, 0, 139)",
+        "description": "Категория, в которой игроки участвуют в поединках один на один или в командных боях."
     },
     {
         "id": "17",
         "title": "Симулятор" ,
         "imgUrl": "/gamePics/simulationCategory.jpg",
-        "gradientColor": "rgb(0, 139, 139)"
+        "gradientColor": "rgb(0, 139, 139)",
+        "description": "Категория, где игроки могут симулировать различные аспекты реальной или вымышленной жизни."
     },
     {
         "id": "18",
         "title": "Файтинг" ,
         "imgUrl": "/gamePics/fightingCategory.jpg",
-        "gradientColor": "rgb(139, 0, 139)"
+        "gradientColor": "rgb(139, 0, 139)",
+        "description": "Категория, в которой игроки участвуют в поединках один на один или в командных боях."
     },
     {
         "id": "19",
         "title": "Симулятор" ,
         "imgUrl": "/gamePics/simulationCategory.jpg",
-        "gradientColor": "rgb(0, 139, 139)"
+        "gradientColor": "rgb(0, 139, 139)",
+        "description": "Категория, где игроки могут симулировать различные аспекты реальной или вымышленной жизни."
     },
     {
         "id": "20",
         "title": "Файтинг" ,
         "imgUrl": "/gamePics/fightingCategory.jpg",
-        "gradientColor": "rgb(139, 0, 139)"
+        "gradientColor": "rgb(139, 0, 139)",
+        "description": "Категория, в которой игроки участвуют в поединках один на один или в командных боях."
     }
 ]

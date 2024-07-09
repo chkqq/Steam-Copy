@@ -1,4 +1,4 @@
-import styles from '../style.module.scss'
+import styles from './style.module.scss'
 import FeaturedTag from './featuredTag'
 import { Game } from '../../../types/gameTypes'
 const FeaturedTagsSection: React.FC<{ games: Game[] }> = ({ games }) => (

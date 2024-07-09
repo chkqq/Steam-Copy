@@ -24,37 +24,6 @@
         background-repeat: no-repeat;
     }
 
-    .gamePriceBox {
-        z-index: -1;
-        position: absolute;
-        display: flex;
-        align-items: center;
-        background-color: #0c0f11;
-        bottom: 0;
-        left: 0;
-
-        .discount {
-            font-weight: bold;
-            color: #000000;
-            background: #A1CD44;
-            padding: 6px;
-            font-size: 16px;
-        }
-
-        .originalPrice {
-            font-size: 14px;
-            color: #8F98A0;
-            padding: 4px;
-            text-decoration: line-through;
-        }
-
-        .discountPrice {
-            padding: 4px;
-            font-size: 14px;
-            color: #ffffff;
-        }
-    }
-
     .tooltip {
         position: absolute;
         top: 0;

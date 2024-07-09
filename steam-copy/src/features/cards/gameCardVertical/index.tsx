@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './style.module.scss'
 import { Game } from '../../../types/gameTypes'
+import GamePrice from '../../../ui/gamePrice'
 
 interface GameCardVerticalProps {
     game: Game
@@ -10,16 +11,13 @@ const GameCardVertical: React.FC<GameCardVerticalProps> = ({ game }) => {
     return (
         <div className={styles.mainBox}>
             <div className={styles.imageContainer} style={{ backgroundImage: `url(${game.imageUrl})` }}>
-                <div className={styles.gamePriceBox}>
-                    <div className={styles.discount}>
-                        <span>{game.discount}%</span>
-                    </div>
-                    <div className={styles.originalPrice}>
-                        <span>{game.originalPrice}</span>
-                    </div>
-                    <div className={styles.discountPrice}>
-                        <span>{game.discountPrice}</span>
-                    </div>
+                <div className={styles.gamePriceHover}>
+                    <GamePrice
+                        location='right'
+                        discount={game.discount}
+                        originalPrice={game.originalPrice}
+                        discountPrice={game.discountPrice}
+                    />
                 </div>
             </div>
             <div className={styles.infoContainer}>

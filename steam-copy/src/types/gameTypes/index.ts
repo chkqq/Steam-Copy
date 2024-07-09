@@ -18,6 +18,7 @@ export interface Category {
     title: string
     imgUrl: string
     gradientColor: string
+    description: string
 }
 
 export interface Data {

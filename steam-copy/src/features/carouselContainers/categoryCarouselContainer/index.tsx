@@ -2,26 +2,41 @@ import React, { useState } from 'react'
 import styles from './style.module.scss'
 import { Category } from '../../../types/gameTypes'
 import CategoryCard from '../../cards/categoryCard'
+import PageIndicators from '../../../ui/pageIndicators'
+import CarouselButton from '../../../ui/CarouselButton'
 
 interface CategoryCarouselContainerProps {
     categories: Category[]
 }
 const CategoryCarouselContainer: React.FC<CategoryCarouselContainerProps> = ({ categories }) => {
     const [currentPage, setCurrentPage] = useState(0)
+    const [isLoading, setIsLoading] = useState(false)
     const categoriesPerPage = 4
 
     const totalPages = Math.ceil(categories.length / categoriesPerPage)
 
     const handlePrevPage = () => {
-        setCurrentPage(prevPage => (prevPage === 0 ? totalPages - 1 : prevPage - 1))
+        setIsLoading(true)
+        setTimeout(() => {
+            setCurrentPage(prevPage => (prevPage === 0 ? totalPages - 1 : prevPage - 1))
+            setIsLoading(false)
+        }, 100)
     }
 
     const handleNextPage = () => {
-        setCurrentPage(prevPage => (prevPage === totalPages - 1 ? 0 : prevPage + 1))
+        setIsLoading(true)
+        setTimeout(() => {
+            setCurrentPage(prevPage => (prevPage === totalPages - 1 ? 0 : prevPage + 1))
+            setIsLoading(false)
+        }, 100)
     }
 
     const handlePageIndicatorClick = (pageIndex: number) => {
-        setCurrentPage(pageIndex)
+        setIsLoading(true)
+        setTimeout(() => {
+            setCurrentPage(pageIndex)
+            setIsLoading(false)
+        }, 100)
     }
 
     const getCurrentCategories = () => {
@@ -30,26 +45,24 @@ const CategoryCarouselContainer: React.FC<CategoryCarouselContainerProps> = ({ c
     }
 
     return (
-        <div>
+        <>
             <div className={styles.carouselContainer}>
-                <button onClick={handlePrevPage} className={styles.navButton}>❮</button>
+                <CarouselButton direction="prev" onClick={handlePrevPage} />
                 <div className={styles.categoriesContainer}>
                     {getCurrentCategories().map(category => (
-                        <CategoryCard key={category.id} category={category} />
+                        <div key={category.id} className={`${styles.categoryCard} ${isLoading ? styles.hidden : ''}`}>
+                            <CategoryCard category={category}/>
+                        </div>
                     ))}
                 </div>
-                <button onClick={handleNextPage} className={styles.navButton}>❯</button>
+                <CarouselButton direction="next" onClick={handleNextPage} />
             </div>
-            <div className={styles.pageIndicators}>
-                {Array.from({ length: totalPages }, (_, index) => (
-                    <span
-                        key={index}
-                        className={`${styles.pageIndicator} ${index === currentPage ? styles.active : ''}`}
-                        onClick={() => handlePageIndicatorClick(index)}
-                    />
-                ))}
-            </div>
-        </div>
+            <PageIndicators
+                totalPages={totalPages}
+                currentPage={currentPage}
+                onPageIndicatorClick={handlePageIndicatorClick}
+            />
+        </>
     )
 }
 
