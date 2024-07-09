@@ -1,7 +1,7 @@
-.linkBox{
+.linkBox {
     text-decoration: none;
-    .seeMore
-    {
+
+    .seeMore {
         cursor: pointer;
         border-radius: 2px;
         padding: 2.5px 10px;
@@ -12,8 +12,8 @@
         text-transform: uppercase;
         text-decoration: none;
     }
-}
-.seeMore:hover
-{
-    background-color: #ffffff;
+
+    .seeMore:hover {
+        background-color: #ffffff;
+    }
 }

@@ -1,5 +1,4 @@
-.footer
-{
+.footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,36 +8,30 @@
     background-color: #000000;
     color: #c6d4df;
 
-    .footerContent
-    {
+    .footerContent {
         width: 940px;
 
-        .links
-        {
+        .links {
             color: #C6D4DF;
             text-decoration: none;
         }
 
-        .links:hover
-        {
+        .links:hover {
             color: #ffffff;
         }
 
-        .delimiter
-        {
+        .delimiter {
             height: 8px;
             border-top: 1px solid #363c44;
         }
 
-        .logos
-        {
+        .logos {
             display: flex;
             align-items: center;
             justify-content: space-between;
             height: 25px;
 
-            .newFooterLogo
-            {
+            .newFooterLogo {
                 display: block;
                 background-image: url('/footerLogo_valve_new.png');
                 background-size: contain;
@@ -48,8 +41,7 @@
             }
         }
 
-        .footerText
-        {
+        .footerText {
             margin: 5px 12px 12px 12px;
             color: #8F98A0;
             font-size: 12px;
@@ -57,16 +49,14 @@
 
         }
 
-        .contactLinks
-        {
+        .contactLinks {
             display: flex;
             justify-content: space-around;
             margin-top: 8px;
             font-size: 13px;
         }
 
-        .socNetworkLinks
-        {
+        .socNetworkLinks {
             display: flex;
             align-items: center;
             gap: 3px;

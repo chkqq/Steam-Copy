@@ -7,15 +7,15 @@ interface CategoryCardProps {
 }
 
 const CategoryCard: React.FC<CategoryCardProps> = ({ category }) => {
-    const [isFlipped, setIsFlipped] = useState(false);
+    const [isFlipped, setIsFlipped] = useState(false)
 
     const handleMouseEnter = () => {
-        setIsFlipped(true);
-    };
+        setIsFlipped(true)
+    }
 
     const handleMouseLeave = () => {
-        setIsFlipped(false);
-    };
+        setIsFlipped(false)
+    }
 
     return (
         <div

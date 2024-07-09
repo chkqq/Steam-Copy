@@ -28,6 +28,8 @@ export interface Data {
     secondTableGames: Game[]
     categories: Category[]
     saleLeadersGames: Game[]
+    warSimulators: Game[]
+    povShooters: Game[]
     upToThreeHundredRublesGames: Game[]
     newUpComingGames: Game[]
     [key: string]: Game[] | Category[]

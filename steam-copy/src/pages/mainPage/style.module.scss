@@ -1,5 +1,4 @@
-.background
-{
+.background {
 
     width: 100%;
     min-height: 100vh;
@@ -7,8 +6,8 @@
     font-family: 'Motiva Sans', sans-serif;
     background-color: #202531;
     background-image: url('/background.png');
-    .backgroundGif
-    {
+
+    .backgroundGif {
         position: absolute;
         margin-top: 104px;
         height: 700px;
@@ -21,8 +20,7 @@
         z-index: 1;
     }
 
-    .pageContent
-    {
+    .pageContent {
         display: flex;
         flex-direction: column;
         align-items: center;

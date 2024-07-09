@@ -23,6 +23,8 @@ const MainPage: React.FC = () => {
         secondTableGames: [],
         categories: [],
         saleLeadersGames: [],
+        warSimulators: [],
+        povShooters: [],
         upToThreeHundredRublesGames: [],
         newUpComingGames: []
     });
@@ -36,9 +38,11 @@ const MainPage: React.FC = () => {
                     { key: 'games', url: '/src/dataBase/games.json' },
                     { key: 'bigDiscountGames', url: '/src/dataBase/bigDiscountGames.json' },
                     { key: 'firstTableGames', url: '/src/dataBase/firstGamesTable.json' },
-                    { key: 'secondTableGames', url: '/src/dataBase/firstGamesTable.json' },
+                    { key: 'secondTableGames', url: '/src/dataBase/secondGamesTable.json' },
                     { key: 'categories', url: '/src/dataBase/categories.json' },
                     { key: 'saleLeadersGames', url: '/src/dataBase/saleLeadersGames.json' },
+                    { key: 'warSimulators', url: '/src/dataBase/warSimulators.json' },
+                    { key: 'povShooters', url: '/src/dataBase/povShooters.json' },
                     { key: 'upToThreeHundredRublesGames', url: '/src/dataBase/upToThreeHundredRubles.json' },
                     { key: 'newUpComingGames', url: '/src/dataBase/newUpComingGames.json' }
                 ];
@@ -91,7 +95,10 @@ const MainPage: React.FC = () => {
                 <FirstGamesTable games={data.secondTableGames} />
                 <SaleLeadersSection games={data.saleLeadersGames} />
                 <FavoriteSeriesSection games={data.games} />
-                <FeaturedTagsSection games={data.saleLeadersGames} />
+                <FeaturedTagsSection
+                    firstTable={data.warSimulators}
+                    secondTable={data.povShooters}
+                />
                 <BudgetGamesSection games={data.upToThreeHundredRublesGames} />
                 <PopularAndUpcomingSection
                     activeTab={activeTab}

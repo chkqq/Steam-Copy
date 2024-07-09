@@ -1,19 +1,17 @@
-.gamesTable
-{
+.gamesTable {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 50px 0;
     gap: 10px;
 
-    .gamesRoleSmall
-    {
+    .gamesRoleSmall {
         display: flex;
         align-items: center;
         gap: 7px
     }
-    .gamesRoleLarge
-    {
+
+    .gamesRoleLarge {
         display: flex;
         align-items: center;
         gap: 29px

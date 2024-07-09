@@ -1,8 +1,7 @@
-.popularAndNewUpComing
-{
+.popularAndNewUpComing {
     margin-bottom: 100px;
-    .tabs
-    {
+
+    .tabs {
         display: flex;
         gap: 20px;
         font-size: 24px;
@@ -10,14 +9,14 @@
         color: #ffffff;
         cursor: pointer;
     }
-    .activeTab
-    {
+
+    .activeTab {
         text-decoration: underline;
         text-decoration-thickness: 3px;
         text-underline-offset: 5px;
     }
-    .moreGamesLinks
-    {
+
+    .moreGamesLinks {
         display: flex;
         align-items: center;
         justify-content: end;

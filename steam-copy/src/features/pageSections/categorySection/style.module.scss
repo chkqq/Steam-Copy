@@ -1,20 +1,18 @@
-.gameCategories
-{
+.gameCategories {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
 
-    .title
-    {
+    .title {
         display: flex;
         align-items: center;
         gap: 20px;
         font-size: 24px;
         font-weight: 600;
         color: #ffffff;
-        .subText
-        {
+
+        .subText {
             font-size: 18px;
             background: #4ecc8f;
             color: #000;
