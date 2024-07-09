@@ -19,4 +19,13 @@
         opacity: 0;
         transform: translateY(20px);
     }
+
+    .gamesContainer.next
+    {
+        transform: translateX(20px);
+    }
+    .gamesContainer.prev
+    {
+        transform: translateX(-20px);
+    }
 }

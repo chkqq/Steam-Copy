@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import styles from './style.module.scss';
-import { Category } from '../../../types/gameTypes';
+import React, { useState } from 'react'
+import styles from './style.module.scss'
+import { Category } from '../../../types/gameTypes'
 
 interface CategoryCardProps {
-    category: Category;
+    category: Category
 }
 
 const CategoryCard: React.FC<CategoryCardProps> = ({ category }) => {
@@ -42,7 +42,7 @@ const CategoryCard: React.FC<CategoryCardProps> = ({ category }) => {
                 </div>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default CategoryCard;
+export default CategoryCard

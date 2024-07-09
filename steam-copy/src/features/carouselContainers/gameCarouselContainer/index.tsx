@@ -12,6 +12,8 @@ interface GameCarouselContainerProps {
 const GameCarouselContainer: React.FC<GameCarouselContainerProps> = ({ games, CardComponent }) => {
     const [currentPage, setCurrentPage] = useState(0)
     const [isLoading, setIsLoading] = useState(false)
+    const [isNext, setIsNext] = useState(false)
+    const [isPrev, setIsPrev] = useState(false)
     const gamesPerPage = 3
     const totalPages = Math.ceil(games.length / gamesPerPage)
     const [currentGames, setCurrentGames] = useState<Game[]>([])
@@ -24,7 +26,9 @@ const GameCarouselContainer: React.FC<GameCarouselContainerProps> = ({ games, Ca
 
     const handlePrevPage = () => {
         setIsLoading(true)
+        setIsPrev(true)
         setTimeout(() => {
+            setIsPrev(false)
             setCurrentPage(prevPage => (prevPage === 0 ? totalPages - 1 : prevPage - 1))
             setIsLoading(false)
         }, 100)
@@ -32,7 +36,9 @@ const GameCarouselContainer: React.FC<GameCarouselContainerProps> = ({ games, Ca
 
     const handleNextPage = () => {
         setIsLoading(true)
+        setIsNext(true)
         setTimeout(() => {
+            setIsNext(false)
             setCurrentPage(prevPage => (prevPage === totalPages - 1 ? 0 : prevPage + 1))
             setIsLoading(false)
         }, 100)
@@ -50,7 +56,12 @@ const GameCarouselContainer: React.FC<GameCarouselContainerProps> = ({ games, Ca
         <>
             <div className={styles.carouselContainer}>
                 <CarouselButton direction="prev" onClick={handlePrevPage} />
-                <div className={`${styles.gamesContainer} ${isLoading ? styles.hidden : ''}`}>
+                <div className={`
+                    ${styles.gamesContainer}
+                    ${isLoading ? styles.hidden : ''}
+                    ${isNext ? styles.next : ''}
+                    ${isPrev ? styles.prev : ''}
+                `}>
                     {currentGames.map(game => (
                             <CardComponent game={game} key={game.id} />
                     ))}
