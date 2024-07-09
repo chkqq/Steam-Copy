@@ -9,18 +9,14 @@
         gap: 20px;
         width: 100%;
         z-index: 1;
-
-        .categoryCard {
-            opacity: 1;
-            transform: translateY(0);
-            transition: opacity 0.1s ease, transform 0.1s ease;
-        }
-
-        .categoryCard.hidden {
-            opacity: 0;
-            transform: translateY(20px);
-        }
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity 0.1s ease, transform 0.1s ease;
     }
 
+    .categoriesContainer.hidden {
+        opacity: 0;
+        transform: translateY(20px);
+    }
 }
 

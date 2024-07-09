@@ -50,11 +50,9 @@ const GameCarouselContainer: React.FC<GameCarouselContainerProps> = ({ games, Ca
         <>
             <div className={styles.carouselContainer}>
                 <CarouselButton direction="prev" onClick={handlePrevPage} />
-                <div className={styles.gamesContainer}>
+                <div className={`${styles.gamesContainer} ${isLoading ? styles.hidden : ''}`}>
                     {currentGames.map(game => (
-                        <div key={game.id} className={`${styles.gameCard} ${isLoading ? styles.hidden : ''}`}>
                             <CardComponent game={game} key={game.id} />
-                        </div>
                     ))}
                 </div>
                 <CarouselButton direction="next" onClick={handleNextPage} />

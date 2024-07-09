@@ -48,11 +48,9 @@ const CategoryCarouselContainer: React.FC<CategoryCarouselContainerProps> = ({ c
         <>
             <div className={styles.carouselContainer}>
                 <CarouselButton direction="prev" onClick={handlePrevPage} />
-                <div className={styles.categoriesContainer}>
+                <div className={`${styles.categoriesContainer} ${isLoading ? styles.hidden : ''}`}>
                     {getCurrentCategories().map(category => (
-                        <div key={category.id} className={`${styles.categoryCard} ${isLoading ? styles.hidden : ''}`}>
-                            <CategoryCard category={category}/>
-                        </div>
+                        <CategoryCard category={category}/>
                     ))}
                 </div>
                 <CarouselButton direction="next" onClick={handleNextPage} />
