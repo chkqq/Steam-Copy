@@ -12,12 +12,12 @@ const GameCardHorizontal: React.FC<GameCardHorizontalProps> = ({ game, size }) =
     const [isHovered, setIsHovered] = useState(false)
 
     const handleMouseEnter = () => {
-    setIsHovered(true);
-    };
+    setIsHovered(true)
+    }
 
     const handleMouseLeave = () => {
-    setIsHovered(false);
-    };
+    setIsHovered(false)
+    }
     return (
         <div
             className={`${styles.mainBox} ${styles[size.toLowerCase()]}`}

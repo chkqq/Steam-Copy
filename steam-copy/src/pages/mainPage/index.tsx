@@ -14,6 +14,7 @@ import FavoriteSeriesSection from '../../features/pageSections/favoriteSeriesSec
 import FeaturedTagsSection from '../../features/pageSections/featuredTagsSection'
 import BudgetGamesSection from '../../features/pageSections/budgetGamesSection'
 import PopularAndUpcomingSection from '../../features/pageSections/popularAndUpcomingSection'
+
 const MainPage: React.FC = () => {
     const [data, setData] = useState<Data>({
         games: [],
@@ -74,7 +75,7 @@ const MainPage: React.FC = () => {
 
 
     const handleTabClick = (tab: string) => {
-        setActiveTab(tab);
+        setActiveTab(tab)
     }
 
     return (
@@ -103,7 +104,5 @@ const MainPage: React.FC = () => {
         </div>
     )
 }
-
-
 
 export default MainPage

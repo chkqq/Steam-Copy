@@ -3,134 +3,134 @@
     transition: transform 0.2s ease, background-image 0.2s ease;
 
     &.large {
-    height: 245px;
-    width: 376px;
+        height: 245px;
+        width: 376px;
     }
 
     &.medium {
-    height: 197px;
-    width: 291px;
+        height: 197px;
+        width: 291px;
     }
 
     &.small {
-    height: 185px;
-    width: 272px;
+        height: 185px;
+        width: 272px;
     }
 
     .cardImage {
-    height: 100%;
-    width: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     .gamePriceBox {
-    z-index: -1;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    background-color: #0c0f11;
-    bottom: 0;
-    left: 0;
+        z-index: -1;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        background-color: #0c0f11;
+        bottom: 0;
+        left: 0;
 
         .discount {
-        font-weight: bold;
-        color: #000000;
-        background: #A1CD44;
-        padding: 6px;
-        font-size: 16px;
+            font-weight: bold;
+            color: #000000;
+            background: #A1CD44;
+            padding: 6px;
+            font-size: 16px;
         }
 
         .originalPrice {
-        font-size: 14px;
-        color: #8F98A0;
-        padding: 4px;
-        text-decoration: line-through;
+            font-size: 14px;
+            color: #8F98A0;
+            padding: 4px;
+            text-decoration: line-through;
         }
 
         .discountPrice {
-        padding: 4px;
-        font-size: 14px;
-        color: #ffffff;
+            padding: 4px;
+            font-size: 14px;
+            color: #ffffff;
         }
     }
 
     .tooltip {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    width: 250px;
-    background: #dcdedf;
-    color: #333333;
-    padding: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    display: none;
-    z-index: 9999;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 250px;
+        background: #dcdedf;
+        color: #333333;
+        padding: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        display: none;
+        z-index: 9999;
 
         &::before {
-        content: '';
-        position: absolute;
-        left: -10px;
-        top: 20px;
-        width: 0;
-        height: 0;
-        border-right: 10px solid #dcdedf;
-        border-top: 9px solid transparent;
-        border-bottom: 9px solid transparent;
+            content: '';
+            position: absolute;
+            left: -10px;
+            top: 20px;
+            width: 0;
+            height: 0;
+            border-right: 10px solid #dcdedf;
+            border-top: 9px solid transparent;
+            border-bottom: 9px solid transparent;
         }
 
         .gameTitle {
-        font-size: 18px;
-        font-weight: bold;
-        margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
         }
 
         .releaseDate {
-        font-size: 10px;
+            font-size: 10px;
         }
 
         .description {
             margin-top: 10px;
-        font-size: 12px;
+            font-size: 12px;
         }
 
         .gameReviews {
-        display: flex;
-        flex-direction: column;
-        font-size: 12px;
-        border-radius: 3px;
-        padding: 4px 5px;
-        background: #3a4545;
-        color: #ffffff;
-        margin: 10px 0;
+            display: flex;
+            flex-direction: column;
+            font-size: 12px;
+            border-radius: 3px;
+            padding: 4px 5px;
+            background: #3a4545;
+            color: #ffffff;
+            margin: 10px 0;
 
             .summaryReviews {
-            color: #66C0F4;
+                color: #66C0F4;
             }
         }
 
         .gameTags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 5px;
-        margin: 10px 0 0 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin: 10px 0 0 0;
 
             .tag {
-            padding: 2px 5px;
-            background-color: #6c7a89;
-            color: #ffffff;
-            font-size: 12px;
-            border-radius: 3px;
+                padding: 2px 5px;
+                background-color: #6c7a89;
+                color: #ffffff;
+                font-size: 12px;
+                border-radius: 3px;
             }
         }
     }
 
     &:hover .tooltip {
-    display: block;
+        display: block;
     }
 
     .cardImage:hover {
         background-image: url('${game.giUrl}');
-    transform: scale(1.1);
+        transform: scale(1.1);
     }
 }
