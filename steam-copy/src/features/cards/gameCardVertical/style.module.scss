@@ -87,6 +87,10 @@
         }
     }
     .gamePriceHover {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 100;
         transition: margin 0.2s ease-out 0.3s;
     }
     &:hover .infoContainer {
@@ -98,6 +102,6 @@
     }
     &:hover .gamePriceHover
     {
-        margin-bottom: -20px;
+        margin-bottom: 20px;
     }
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './style.module.scss'
 import { Game } from '../../../types/gameTypes'
 import GamePrice from '../../../ui/gamePrice'
-
+import { Link } from 'react-router-dom'
 interface GameCardVerticalProps {
     game: Game
 }
@@ -10,15 +10,14 @@ interface GameCardVerticalProps {
 const GameCardVertical: React.FC<GameCardVerticalProps> = ({ game }) => {
     return (
         <div className={styles.mainBox}>
-            <div className={styles.imageContainer} style={{ backgroundImage: `url(${game.imageUrl})` }}>
-                <div className={styles.gamePriceHover}>
-                    <GamePrice
-                        location='right'
-                        discount={game.discount}
-                        originalPrice={game.originalPrice}
-                        discountPrice={game.discountPrice}
-                    />
-                </div>
+            <div className={styles.imageContainer} style={{ backgroundImage: `url(${game.imageUrl})` }} />
+            <div className={styles.gamePriceHover}>
+                <GamePrice
+                    location='right'
+                    discount={game.discount}
+                    originalPrice={game.originalPrice}
+                    discountPrice={game.discountPrice}
+                />
             </div>
             <div className={styles.infoContainer}>
                 <div className={styles.gameGif} style={{ backgroundImage: `url(${game.gifUrl})` }} />
@@ -35,9 +34,9 @@ const GameCardVertical: React.FC<GameCardVerticalProps> = ({ game }) => {
                             </div>
                         ))}
                     </div>
-                    <a href="/" className={styles.buyButton}>
+                    <Link href="/" className={styles.buyButton}>
                         В корзину
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>
